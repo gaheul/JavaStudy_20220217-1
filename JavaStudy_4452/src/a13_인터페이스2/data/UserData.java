@@ -3,7 +3,7 @@ package a13_인터페이스2.data;
 import a13_인터페이스2.model.User;
 
 public class UserData {
-	private User[] users;
+	private User[] users; // users = new User[10]
 	
 	public UserData() {
 		// TODO Auto-generated constructor stub
@@ -25,14 +25,18 @@ public class UserData {
 
 
 	public void setUsers(User[] users) {
-		this.users = users;
+		this.users = users; //넘겨받은 값 => new User[10] 
 	}
 
 
 
 	public void showUsers() {
 		for(int i =0; i<users.length;i++) {
-			users[i].showUser();
+			if(users[i] == null) {
+				continue;
+			}
+//			users[i].showUser();
+			System.out.println(users[i]);
 		}
 	}
 }
