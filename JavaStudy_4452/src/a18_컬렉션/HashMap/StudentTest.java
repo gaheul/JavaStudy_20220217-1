@@ -15,7 +15,7 @@ public class StudentTest {
 		service.addStudent("김가흘3", "ccc@dfd", "양산");
 		service.showStudentAll();
 		
-		service.updateStudentByName("김가흘1",null,null);
+		service.updateStudentByName("김가흘1","aaa@dfd","부산");
 		service.showStudentByName("김가흘1");
 		
 		service.deleteStudentByName("김가흘1");
